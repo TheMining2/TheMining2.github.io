@@ -51,7 +51,7 @@ html{scroll-behavior:smooth}
 @media(max-width:800px){.about-photo,.story-aside,.story-body{grid-column:1;grid-row:auto}}
 
 /* Homepage closing links and the repositioned, high-contrast interest ticker. */
-.closing-cta{margin-bottom:0}
+.closing-cta{margin-bottom:64px}
 .closing-actions{display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap}
 .closing-actions .button{margin-right:8px}
 .social-button{width:48px;height:48px;display:inline-grid;place-items:center;border:1px solid rgba(234,240,243,.5);border-radius:4px;color:#f2f6f8;background:rgba(255,255,255,.045);transition:background-color .18s ease,border-color .18s ease}
