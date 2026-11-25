@@ -73,6 +73,8 @@ html{scroll-behavior:smooth}
 .about-story{grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:7%;align-items:start}
 .about-left-column{grid-column:1;grid-row:1;display:flex;flex-direction:column;align-items:stretch;gap:14px;min-width:0}
 .about-photo{width:100%;max-width:none;height:500px;margin:0;padding:10px}
+.step-heading{display:flex;align-items:center;gap:12px;height:25px;margin-bottom:14px}
+.step-heading .step-icon{margin:0;line-height:1}
 .about-photo img{object-position:center 35%}
 .story-aside{padding-top:0}
 .story-aside .eyebrow{margin-bottom:8px}
@@ -116,4 +118,15 @@ html{scroll-behavior:smooth}
 }
 @media(prefers-reduced-motion:reduce){
   .pitch-copy{transition:none}
+}
+:root{--section-space:clamp(40px,5.2vw,64px)}
+.hero{padding-block:104px var(--section-space)}
+.intro-grid,.character-strip,.approach-section,.featured-section,.about-story,.timeline-section,.skills-section,.about-note,.work-list,.work-end{padding-block:var(--section-space)}
+.page-hero{padding-block:110px var(--section-space)}
+.closing-cta{padding-block:var(--section-space);margin-bottom:64px}
+.compact{margin-top:0}
+.ticker-bottom{margin-top:var(--section-space)}
+@media(max-width:800px){
+  .hero{padding-block:75px var(--section-space)}
+  .page-hero{padding-block:80px var(--section-space)}
 }
